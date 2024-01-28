@@ -1,9 +1,12 @@
 import { createGlobalStyle } from "styled-components";
+import { backgroundColor, textColor } from "./variables/variables";
 
 export const GlobalStyle = createGlobalStyle`
 /* ---------------------------------- reset --------------------------------- */
   body {
-  font-family: 'Inter', sans-serif;
+  font-family: Arimo, sans-serif;
+  background-color: ${backgroundColor};
+  color: ${textColor};
   margin: 0;
 }
 
@@ -42,6 +45,4 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-  
 `;
